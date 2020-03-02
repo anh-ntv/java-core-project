@@ -1,0 +1,19 @@
+public class ComplexTest {
+    public static void main(String[] args) {
+        ComplexNumber a = new ComplexNumber();
+        ComplexNumber b = new ComplexNumber();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Start input real and imaginary of 2 complex number respectly:");
+   
+        a.setReal(sc.nextDouble());
+        a.setImaginary(sc.nextDouble());
+        b.setReal(sc.nextDouble());
+        b.setImaginary(sc.nextDouble());
+        
+        System.out.println("a + b = " + a.add(b).toString());
+        System.out.println("a - b = " + a.subtract(b).toString());
+        System.out.println("a * b = " + a.multiply(b).toString());
+        System.out.println("a / b = " + a.devide(b).toString());
+        
+    }
+}
